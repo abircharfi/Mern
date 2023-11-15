@@ -8,7 +8,7 @@ const [email,setEmail]= useState("");
 const [password,setPassword]= useState("");
 const [confirmPassword,setConfirmPassword]= useState("");
 
-const CreateUser =(e) => {
+ const CreateUser =(e) => {
     e.preventDefault();
 
     const newUser =() => {
