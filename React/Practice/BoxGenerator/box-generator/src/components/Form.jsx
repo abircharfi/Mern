@@ -24,7 +24,7 @@ const Form = (props) => {
 
     return (
         <div>
-            <h1>Write the color of box !</h1>
+            <h1>Write the Color, Width and Height of your Box !</h1>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Color</span>
