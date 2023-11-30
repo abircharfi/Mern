@@ -1,0 +1,6 @@
+mkdir controller models route 
+touch server.js
+touch .gitignore 
+touch .env
+npm init -y
+npm i express nodemon mongoose dotenv
