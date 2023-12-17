@@ -1,15 +1,13 @@
 import React from 'react'
 import axios from 'axios';
 import Form from './Form'
-//import { useNavigate } from 'react-router-dom';
 
-import { TextField, Button, Typography, Container, Paper } from '@mui/material';
+
 
 const CreateProduct = (props) => {
 
   const {onProductCreate} = props
 
-  //const nav = useNavigate();
 
   const handleSubmission = (submittedData) => {
     console.log(submittedData.price);

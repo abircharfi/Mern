@@ -33,7 +33,6 @@ const Form = ({ onSubmission, authorToEdit, errors }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmission(formData);
-   // navigate('/authors');
   };
 
   const handleCancel = (e) => {

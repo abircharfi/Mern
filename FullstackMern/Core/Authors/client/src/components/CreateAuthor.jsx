@@ -2,11 +2,14 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios';
 import Form from './Form';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const CreateAuthor = (props) => {
     const {refreshAuthors} = props;
     const [errors, setErrors] = useState([]); 
+    const navigate = useNavigate();
 
    
 
@@ -16,6 +19,8 @@ const CreateAuthor = (props) => {
           .then((res) => {
             console.log(res.data);
             refreshAuthors();
+            navigate('/authors');
+            
           })
           .catch(err=>{
             const errorResponse = err.response.data.errors; // Get the errors from err.response.data

@@ -26,7 +26,7 @@ console.log(productToEdit);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmission(formData); // Fix the function name here
+    onSubmission(formData); 
   };
 
   return (
